@@ -1,0 +1,406 @@
+
+:root{
+    --color:rgba(253, 252, 251, 0.617);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Netflix Font', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+
+
+/* Header section */
+
+header {
+    position: relative;
+    min-height: 43.75rem;
+    min-width: 100vw;
+
+}
+
+
+.banner-image img {
+    position: absolute;
+    top: 2px;
+    min-height: 100%;
+    min-width: 100%;
+    transform: scale(1.24) translateY(-10%);
+    object-fit: cover;
+
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.842) 0, rgba(0, 0, 0, 0.437) 60%, rgba(0, 0, 0, 0.819) 100%);
+
+}
+
+header nav {
+    position: relative;
+    max-width: 80rem;
+    margin: auto;
+    height: 5em;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.navs {
+    width: 300px;
+}
+
+.select-wrapper {
+    position: relative;
+    width: 42%;
+    height: 30px;
+    border: 2px solid rgb(83, 85, 85);
+    border-radius: 5px;
+
+}
+
+.select-wrapper select:focus {
+
+    outline: 1px solid white;
+    outline-offset: 2px;
+    border-radius: 5px;
+}
+
+select {
+    background-color: transparent;
+    appearance: none;
+    width: 100%;
+    border: none;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    font-size: 16px;
+
+}
+
+select:focus {
+    outline: none;
+}
+
+option {
+    color: black;
+    text-align: center;
+    width: 30px;
+    border-radius: 0;
+}
+
+
+.select-wrapper::before {
+
+    content: url('assets/images/lang.svg');
+    filter: invert();
+    position: absolute;
+    top: 20%;
+    left: 10px;
+}
+
+.select-wrapper::after {
+    content: url('assets/images/down-arrow-svgrepo-com.svg');
+    position: absolute;
+    right: 15px;
+    top: 20%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    background-color: red;
+    border-radius: 5px;
+    font-weight: 600;
+    color: white;
+}
+
+.btn-login {
+    padding: 7px 12px;
+    font-size: 14px;
+}
+
+.hero {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 38em;
+    text-align: center;
+}
+
+.text-content {
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+
+.text-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    word-spacing: -4px;
+    letter-spacing: -2px;
+}
+
+
+.text-content>p {
+    font-size: 24px;
+}
+
+.membershop {
+    width: 100%;
+    height: 6rem;
+}
+
+.membership>p {
+    font-size: 20px;
+
+}
+
+.email-form {
+    position: relative;
+
+}
+
+.email-form>.labelline {
+    user-select: none;
+    position: absolute;
+    top: 35%;
+    left: 3%;
+    transition: 0.2s ease-in;
+
+
+}
+
+.email-form>input {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.323);
+    border: 1px solid grey;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 65%;
+    padding: 1.5rem 1rem 0.5rem;
+    border-radius: 5px;
+}
+
+.email-form>input:focus{
+    background-color: rgba(0, 0, 0, 0.487);
+}
+
+
+.email-form>.active {
+    transform: translateY(-10px);
+    font-size: 12px;
+}
+
+.email-btn {
+    /* cursor: pointer; */
+    display: inline-block;
+    width: 35%;
+    margin-left: 10px;
+    text-align: start;
+    padding-left: 20px;
+    font-size: 24px;
+    padding-top: 15px;
+    position: relative;
+
+}
+
+.email-btn::after{
+    position: absolute;
+    content: url(assets/images/ltr.svg);
+    filter: invert();
+    right: 44px;
+    top: 16px;
+}
+
+
+.breaker{
+    width: 100%;
+    height: 0.6rem;
+    background-color: rgb(35, 35, 35);
+}
+
+/* Main Content Starts here */
+
+
+main{
+    width: 100%;
+}
+
+.main-content{
+    width: 80%;
+    margin: auto;
+    min-height: 35rem;
+}
+
+.img-content{
+    position: relative;
+}
+
+
+.img-content > video{
+    position: absolute;
+    right: 83px;
+    top: 90px;
+    z-index: -1;
+}
+
+
+
+
+.text-content > h1{
+    font-size: 3rem;
+}
+
+.text-content > p{
+    font-size: 1.6rem;
+}
+
+
+section:nth-child(even) >.main-content{
+    flex-direction: row-reverse;
+
+}
+
+.download-card{
+    position: absolute;
+    top: 65%;
+    right: 22.5%;
+    border: 2px solid rgba(91, 90, 90, 0.681);
+    width: 55%;
+    background-color: black;
+    padding: 0.5rem 0.75rem;
+    border-radius: 15px;
+   
+}
+
+.download-text .download-text{
+    width: 33%;
+    
+}
+
+.download-text .download-text p{
+    font-weight: 500;
+    font-size: 16px;
+
+
+}
+
+.download-text >span{
+    color: blue;
+}
+
+section:nth-child(3) .img-content > video {
+    top: 44px;
+    right: 119px;
+}
+
+
+
+.faq-section{
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+}
+
+.faq-section > h2{
+
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.faqs{
+    width: 70%;
+    margin: 23px auto;
+    
+}
+
+
+.faq{
+    cursor: pointer;
+    width: 100%;
+    background-color: rgba(72, 70, 70, 0.718);
+    height: 70px;
+    border-radius: 1px;
+
+    padding: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.faq p{
+    font-size: 24px;
+}
+
+
+.faq:hover{
+    background-color: rgba(92, 90, 90, 0.714);
+}
+
+
+footer{
+    margin-top: 5rem;
+    color: var(--color);
+    height: 10rem;
+    margin-bottom: 15rem;
+}
+
+footer a {
+    color: var(--color);
+    text-decoration: underline;
+}
+
+.footer-container{
+    color: var(--color);
+}
+
+
+.footer-container{
+    width: 75%;
+    margin: auto;
+
+}
+
+.links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    padding: 0;
+    margin-top: 3rem;
+    margin-bottom: 30px;
+}
+
+
+
+ul li {
+    list-style: none;
+}
+
+.links > ul {
+    grid-column: span 1; 
+}
+
+
+.links > ul > li{
+    margin-bottom: 25px;
+}
+
+footer span{
+    color: var(--color);
+}
