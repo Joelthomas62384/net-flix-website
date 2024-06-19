@@ -356,19 +356,22 @@ section:nth-child(3) .img-content > video {
 
 footer{
     margin-top: 5rem;
-    color: var(--color);
     height: 10rem;
     margin-bottom: 15rem;
 }
 
-footer a {
+footer  a, span {
     color: var(--color);
+}
+
+
+
+
+footer a {
+   
     text-decoration: underline;
 }
 
-.footer-container{
-    color: var(--color);
-}
 
 
 .footer-container{
@@ -401,6 +404,3 @@ ul li {
     margin-bottom: 25px;
 }
 
-footer span{
-    color: var(--color);
-}
